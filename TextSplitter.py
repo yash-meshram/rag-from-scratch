@@ -25,5 +25,5 @@ class TextSplitterManager():
             separators = ["\n\n", "\n", " ", ""]
         )
         splits_docs = text_splitter.split_documents(flat_docs)
-        print(f"Splitted {len(flat_docs)} pages into {len(splits_docs)} chunks.")
+        print(f"\nSplitted {len(flat_docs)} pages into {len(splits_docs)} chunks.")
         return splits_docs
