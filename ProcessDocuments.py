@@ -32,7 +32,7 @@ class ProcessDocumentsManager():
 
                 # adding metadata custome
                 for page in document:
-                    page.metadata["file_name"] = (file_.name,)
+                    page.metadata["file_name"] = file_.name
                     page.metadata["file_type"] = "pdf"
 
                 all_documents.append(document)

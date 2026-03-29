@@ -6,6 +6,7 @@ from sentence_transformers import SentenceTransformer
 class EmbeddingManager:
     def __init__(self, model_name: str = "multi-qa-MiniLM-L6-cos-v1"):
         self.model_name = model_name
+        self.model = None
         self.load_model()
 
     def load_model(self):

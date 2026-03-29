@@ -7,8 +7,8 @@ class TextSplitterManager():
     def split_documents(
         self,
         documents: Union[Document, list[Document], list[list[Document]]], 
-        chunk_size = 1000, 
-        chunk_overlap = 200
+        chunk_size: int, 
+        chunk_overlap: int
         ) -> list[Document]:
         '''split documents into smaller chunk for better rag performance'''
         if isinstance(documents, Document):
