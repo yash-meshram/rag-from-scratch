@@ -1,8 +1,8 @@
 from pymupdf import Document
-from ProcessDocuments import ProcessDocumentsManager
-from TextSplitter import TextSplitterManager
-from Embedding import EmbeddingManager
-from VectorStore import VectorStore
+from src.indexing.ProcessDocuments import ProcessDocumentsManager
+from src.indexing.TextSplitter import TextSplitterManager
+from src.indexing.Embedding import EmbeddingManager
+from src.indexing.VectorStore import VectorStore
 import numpy as np
 from typing import Union
 
